@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Flixeek</string>
+
+    <!-- Network Failure Messages -->
+    <string name="default_api">TMDB</string>
+    <string name="flixeek_contentapi_failure_msg">You may retry or just press Cancel to dismiss.</string>
+    <string name="flixeek_contentapi_failure_title">Flixeek Content Api Failure</string>
+
+    <string name="nw_fail_retry">Retry</string>
+    <string name="nw_fail_netsettings">Network Settings</string>
+    <string name="nw_fail_cancel">Cancel</string>
+
+    <string name="alertdlg_title_no_network">No Network available</string>
+    <string name="alertdlg_content_no_network">There is no network available. You may retry or visit the Network Settings page to set one up?</string>
+
+    <string name="no_network_show_favorites">No Network available, displaying the saved favorites.</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="sort_pref_title">Sort By</string>
+    <string name="sort_by_popularity_title">Most Popular</string>
+    <string name="sort_by_voter_average_title">Highest Rated</string>
+    <string name="show_favorites_title">Favorites</string>
+
+    <string name="sort_pref_key" translatable="false">sorting</string>
+    <string name="sort_pref_default">popularity</string>
+
+    <string-array name="sort_pref_options">
+        <item>Most Popular</item>
+        <item>Highest Rated</item>
+    </string-array>
+    <string-array name="sort_pref_values">
+        <item>popularity</item>
+        <item>vote_average</item>
+    </string-array>
+
+    <string name="content_authority">com.flixeek</string>
+
+    <string name="action_share">Share</string>
+
+    <string name="youtube_player_error">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="trailer_section_label">Trailers</string>
+    <string name="review_url_prefix_text"><b>Read more at </b> %1$s</string>
+    <string name="settings_label">Settings</string>
+    <string name="trailer_thumbnail_content_description">Trailer Thumbnail</string>
+    <string name="movie_thumbnail_content_description">Thumbnail Image</string>
+    <string name="trailer_play_icon_content_description">Trailer Play Icon</string>
+    <string name="trend_img_content_description">Trending Image by popularity or rating</string>
+    <string name="backdrop_image_content_description">Backdrop Image</string>
+    <string name="trailer_share_label">Share</string>
+    <string name="trailer_prev_label">Prev</string>
+    <string name="trailer_next_label">Next</string>
+    <string name="popularity_label">Popularity:</string>
+    <string name="rating_label">Rating:</string>
+    <string name="votes_label">Votes:</string>
+    <string name="release_label">Release:</string>
+    <string name="reviews_section_label">Reviews</string>
+    <string name="images_dir">movie_thumbs</string>
+
+</resources>

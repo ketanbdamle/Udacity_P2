@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/demoTrailerFrame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <!-- Credits: http://stackoverflow.com/questions/6690530/how-to-show-one-layout-on-top-of-the-other-programmatically-in-my-case -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/trailerBox"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/trailer_thumbnail_content_description"
+            android:id="@+id/demoTrailerImage" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/demoTrailerPlay"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/trailer_play_icon_content_description"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play"/>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/trailerBox"
+        android:id="@+id/demoTrailerName"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/demoTrailerSite"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/trailerBox"
+        android:layout_alignLeft="@+id/demoTrailerName"
+        android:layout_alignStart="@+id/demoTrailerName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer_share_label"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/trailerBox"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/share_24"
+        android:drawableLeft="@drawable/share_24"
+        android:id="@+id/trailerShare" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer_prev_label"
+        android:id="@+id/trailerPrevious"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/skip_previous_24"
+        android:paddingRight="8dp"
+        android:layout_alignTop="@+id/trailerShare"
+        android:layout_toLeftOf="@+id/trailerNext"
+        android:layout_toStartOf="@+id/trailerNext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trailer_next_label"
+        android:textSize="16sp"
+        android:id="@+id/trailerNext"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/skip_next_24"
+        android:layout_alignTop="@+id/trailerPrevious"
+        android:layout_alignRight="@+id/trailerBox"
+        android:layout_alignEnd="@+id/trailerBox"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>
