@@ -501,19 +501,6 @@ public class MovieDetailFragment extends Fragment implements LoaderManager.Loade
                     trailerShare.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-//                            Intent sendIntent = new Intent();
-//                            sendIntent.setAction(Intent.ACTION_SEND);
-//                            sendIntent.setType("text/plain");
-//                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                                sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
-//                            }
-//                            else{
-//                                sendIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
-//                            }
-//
-//                            sendIntent.putExtra(Intent.EXTRA_SUBJECT, trailerDetail.getName());
-//                            sendIntent.putExtra(Intent.EXTRA_TEXT, "http://youtube.com/watch?v=" + trailerDetail.getKey());
-
                             startActivity(createShareTrailerIntent(trailerDetail, "Share Video"));
                         }
                     });
