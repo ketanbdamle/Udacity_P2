@@ -596,7 +596,7 @@ public class MovieDetailFragment extends Fragment implements LoaderManager.Loade
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, trailerDetails.getName());
         shareIntent.putExtra(Intent.EXTRA_TEXT, "http://youtube.com/watch?v=" + trailerDetails.getKey());
-        return Intent.createChooser(shareIntent, intentTitle);
+        return shareIntent;//Intent.createChooser(shareIntent, intentTitle);
     }
 
     private void performDbTasks() {
